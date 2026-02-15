@@ -10,7 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
 model.eval()
 
-# Lightweight heuristics to stabilize obvious cases and negation.
+# Jednoduché heuristické pravidlá na stabilizáciu jednoznačných prípadov a spracovania negácie.
 BILLING_KEYWORDS = {
     "bill",
     "billing",
